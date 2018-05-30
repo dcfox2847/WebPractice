@@ -1,0 +1,79 @@
+/* tag styles */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: sandybrown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    margin-right: 20px;
+    font-family: Arial;
+}
+
+
+/* This section is for classes */
+.comp{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.title{
+    grid-column: 1/4;
+    font-size: 42px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-top: 75px;
+}
+.home{
+    grid-column: 1/2;
+    font-size: 24px;
+}
+.links{
+    grid-column: 2/4;
+    justify-content: end;
+    margin-left: auto;
+    font-size: 24px;
+}
+.main_pic{
+    grid-column: 1/4;
+}
+.city_pic{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.pic_holder{
+    grid-column: 1/4;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+.pic{
+    height: 300px;
+    width: 300px;
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 50%;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    vertical-align: middle;
+}
+.wrapper > div{
+    padding:.5em;
+    vertical-align: middle;
+    
+}
+
+/* media queries */

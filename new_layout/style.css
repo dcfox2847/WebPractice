@@ -1,0 +1,71 @@
+/* Tag Styles */
+
+body{
+    background: rgb(199, 226, 235);
+    padding: 0 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ID properties */
+#title{
+    font-size: 32px;
+}
+
+/* Class Properties */
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-rows: repeat(auto-fill, minmax(auto-fit, 25px));
+    grid-gap: 15px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.inWrap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.menuItem{
+    font-size: 20px;
+    grid-column-start: auto;
+    width: fit-content;
+    margin: auto;
+    height: auto;
+    padding: 10px 10px;
+    
+}
+
+.wrapper2{
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 70% 30%;
+    grid-gap: 5px;
+}
+
+.wrapper2{
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+}
+
+/*Images*/
+
+#foxPic{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 30em){
+    .wrapper{
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+    }
+
+}

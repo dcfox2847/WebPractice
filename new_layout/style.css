@@ -3,21 +3,42 @@
 body{
     background: rgb(199, 226, 235);
     padding: 0 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0;
     font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(209, 128, 7);
+}
+
+p{
+    font-size: 1.2em;
 }
 
 /* ID properties */
 #title{
+    font-size: 36px;
+    color: rgb(209, 128, 7);
+}
+
+#greeting{
+    font-family: "Alfa Slab One";
     font-size: 32px;
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /* Class Properties */
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: repeat(auto-fill, minmax(auto-fit, 25px));
     grid-gap: 15px;
     text-align: center;
@@ -27,7 +48,7 @@ body{
 .inWrap{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: flex-end;
 }
 .menuItem{
     font-size: 20px;
@@ -42,16 +63,49 @@ body{
 .wrapper2{
     display:flex;
     margin-top: 20px;
-    margin-bottom: 20px;
     grid-template-columns: 70% 30%;
     grid-gap: 5px;
-}
-
-.wrapper2{
     justify-content: center;
     align-content: center;
     margin-top: 15px;
+    border-bottom: 1px solid rgb(233, 144, 10);
 }
+
+.wrapper3{
+    background: white;
+}
+
+.wrapper3 .wrapper4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-rows: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(233, 144, 10);
+}
+
+.wrapper3 div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.wrapper4{
+    background-image: url("pics/bwcircles.jpg");
+    background-size: cover;
+    background-color: rgb(191, 224, 235);
+    background-blend-mode: lighten;
+}
+
+.wrapper4 div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
 
 /*Images*/
 
@@ -60,12 +114,28 @@ body{
     height: auto;
 }
 
+#tag{
+    align-content: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#tag:hover{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
 /* Media queries */
 
-@media screen and (min-width: 30em){
+@media screen and (min-width: 40em){
     .wrapper{
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 5px;
+    }
+
+    #greeting{
+        font-size: 48px;
     }
 
 }
